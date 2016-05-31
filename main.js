@@ -9,4 +9,10 @@ angular.module('introApp')
 		ic.greeting = function () {
 			ic.greeting = "Thanks for visiting this \nIntro to Angular App"
 		}
+
+		ic.showMe = false;
+		ic.showFunc = function(){
+			console.log("this is it");
+			ic.showMe = !(ic.showMe);
+		}
 	})

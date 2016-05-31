@@ -17,5 +17,12 @@ angular.module('introApp')
 			console.log(ic.showMe);
 		}
 
+		ic.isActive = false;
+		ic.toggleActive = function(){
+			ic.isActive = !ic.isActive;
+			console.log("toggleActive");
+			console.log(ic.isActive);
+
+		}
 		
 	});

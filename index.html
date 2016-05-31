@@ -19,21 +19,16 @@
 <!-- 	Part II -->
 	<div >
 		<h3>H three tag</h3>
-		<p ng-mouseover="style={color:'pink'}" ng-mouseleave="style={'background-color':'white'}" ng-style="style">ipsum</p>
-		<p ng-mouseover="style={color:'pink'}" ng-mouseleave="style={'background-color':'white'}" ng-style="style">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>ipsum</p>
+		<p ng-mouseover="ic.toggleActive()" ng-class="{true: 'colorChange', false: ''}[ic.isActive]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat on proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		<p>snippet:lorem</p>
-		<ul ng-mouseover="style={color:'pink'}" ng-mouseleave="style={'background-color':'white'}" ng-style="style">
+		<ul ng-mouseover="">
 			<li><a href="#">Home</a></li>
 			<li><a href="#">About</a></li>
 			<li><a href="#">Clients</a></li>
 			<li><a href="#">Contact Us</a></li>
 		</ul>
-		<p ng-mouseover="style={color:'pink'}" ng-mouseleave="style={'background-color':'white'}" ng-style="style">nope didnt</p>
+		<p ng-mouseover="ic.toggleActive()" ng-class="{true: 'colorChange', false: ''}[ic.isActive]">nope didnt</p>
 	</div>
 </body>
 </html>

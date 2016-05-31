@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="introApp">
+<head>
+	<title>Intro to Angular</title>
+	<script type="text/javascript" src="angular.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body ng-controller="introController as ic">
+	<button ng-click="ic.greeting()"> Reveal Greeting</button>
+	<h1>{{ic.greeting}}</h1>
+	<button ng-click="">Things We Do</button>
+	<ul>
+		<li>Num</li>
+	</ul>
+</body>
+</html>

@@ -17,7 +17,5 @@ angular.module('introApp')
 			console.log(ic.showMe);
 		}
 
-		ic.mouseO = function(){
-			
-		}
+		
 	});

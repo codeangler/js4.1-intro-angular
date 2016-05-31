@@ -14,5 +14,6 @@ angular.module('introApp')
 		ic.showFunc = function(){
 			console.log("this is it");
 			ic.showMe = !(ic.showMe);
+			console.log(ic.showMe);
 		}
-	})
+	});

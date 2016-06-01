@@ -31,7 +31,7 @@
 		<p [ic.isActive]">nope didnt</p>
 	</div> -->
 	<div ng-repeat="items in ic.content"  >
-		<h1>{{ items.title }}</h1>
+		<h1 ng-mouseover="ic.addLoud()">{{ items.title }}<span ng-show="ic.myData.showIt">!</span></h1>
 		<p ng-mouseover="ic.toggleActive($event)" ng-class="item.isActive">{{ items.text }}</p>
 		<a href="{{ items.url }}" target="_blank">Open the Page</a>		
 	</div>

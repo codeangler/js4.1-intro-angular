@@ -26,17 +26,22 @@ angular.module('introApp')
 		]
 
 		ic.isActive = false;
-		ic.toggleActive = function($event){
+		ic.toggleActive = function($puppy){
 			ic.isActive = !ic.isActive;
 			if (ic.isActive === true){
-				$event.target.style.color = "pink"
+				$puppy.target.style.color = "pink"
 				ic.isActive = !ic.Active;
-				console.log(ic.isActive)
+				// console.log(ic.isActive)
 
 			}else{
-				$event.target.style.color = "black"
-				console.log(ic.isActive);
+				$puppy.target.style.color = "black"
+				// console.log(ic.isActive);
 			}
+		}
+
+		ic.addLoud = function(){
+			ic.myData = {};
+			ic.myData.showIt = true;
 		}
 		
 	});

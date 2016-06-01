@@ -17,7 +17,7 @@
 	</ul>
 
 <!-- 	Part II -->
-	<div >
+<!-- 	<div >
 		<h3>H three tag</h3>
 		<p>ipsum</p>
 		<p ng-mouseover="ic.toggleActive()" ng-class="{true: 'colorChange', false: ''}[ic.isActive]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat on proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -29,6 +29,13 @@
 			<li><a href="#">Contact Us</a></li>
 		</ul>
 		<p ng-mouseover="ic.toggleActive()" ng-class="{true: 'colorChange', false: ''}[ic.isActive]">nope didnt</p>
+	</div> -->
+
+	<div ng-repeat="items in ic.content" ng-mouseover="ic.toggleActive()" >
+		<h1>{{ items.title }}</h1>
+		<p ng-class="{true: 'colorChange', false: ''}[ic.isActive]">{{ items.text }}</p>
+		<a href="{{ items.url }}" target="_blank">Open the Page</a>		
+
 	</div>
 </body>
 </html>

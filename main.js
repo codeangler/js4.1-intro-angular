@@ -17,11 +17,18 @@ angular.module('introApp')
 			console.log(ic.showMe);
 		}
 
+		ic.content = [
+			{ title:'NY Times', text:'some text content', url:'http://www.newyorktimes.com'},
+			{ title:'Economist', text:'some text content', url:'http://www.economist.com'},
+			{ title:'Yahoo!', text:'some text content', url:'http://news.yahoo.com'},
+			{ title:'Google News', text:'some text content', url:'http://news.google.com'},
+
+		]
 		ic.isActive = false;
 		ic.toggleActive = function(){
 			ic.isActive = !ic.isActive;
 			console.log("toggleActive");
-			console.log(ic.isActive);
+			console.log(ic.isActive)
 
 		}
 		

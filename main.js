@@ -24,12 +24,20 @@ angular.module('introApp')
 			{ title:'Google News', text:'some text content', url:'http://news.google.com'},
 
 		]
-		ic.isActive = false;
-		ic.toggleActive = function(){
-			ic.isActive = !ic.isActive;
-			console.log("toggleActive");
-			console.log(ic.isActive)
 
+		ic.isActive = false;
+		ic.toggleActive = function($event){
+			ic.isActive = !ic.isActive;
+			if (ic.isActive === true){
+				$event.target.style.color = "pink"
+				ic.isActive = !ic.Active;
+				console.log(ic.isActive)
+
+			}else{
+				$event.target.style.color = "black"
+				console.log(ic.isActive);
+			}
 		}
 		
 	});
+

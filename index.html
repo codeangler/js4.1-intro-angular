@@ -28,14 +28,12 @@
 			<li><a href="#">Clients</a></li>
 			<li><a href="#">Contact Us</a></li>
 		</ul>
-		<p ng-mouseover="ic.toggleActive()" ng-class="{true: 'colorChange', false: ''}[ic.isActive]">nope didnt</p>
+		<p [ic.isActive]">nope didnt</p>
 	</div> -->
-
-	<div ng-repeat="items in ic.content" ng-mouseover="ic.toggleActive()" >
+	<div ng-repeat="items in ic.content"  >
 		<h1>{{ items.title }}</h1>
-		<p ng-class="{true: 'colorChange', false: ''}[ic.isActive]">{{ items.text }}</p>
+		<p ng-mouseover="ic.toggleActive($event)" ng-class="item.isActive">{{ items.text }}</p>
 		<a href="{{ items.url }}" target="_blank">Open the Page</a>		
-
 	</div>
 </body>
 </html>

@@ -5,10 +5,16 @@ angular.module('introApp')
 angular.module('introApp')
 	.controller("introController", function(){
 		var ic = this;
+
+	// note that ic.h2 isn't made within the controller		
+		ic.h2  = true;
+		console.log(ic.h2)
+
 		ic.name = "Monkey's Uncle";
 		ic.greeting = function () {
 			ic.greeting = "Thanks for visiting this \nIntro to Angular App"
 		}
+		
 
 		ic.showMe = false;
 		ic.showFunc = function(){
